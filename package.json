@@ -1,0 +1,51 @@
+{
+  "name": "vite-plugin-vue-data-loc",
+  "version": "0.1.0",
+  "description": "Add source file and line attributes to Vue templates during Vite development.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jPrudence/vite-plugin-vue-data-loc.git"
+  },
+  "homepage": "https://github.com/jPrudence/vite-plugin-vue-data-loc#readme",
+  "bugs": {
+    "url": "https://github.com/jPrudence/vite-plugin-vue-data-loc/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "benchmark": "node bench/pipeline.mjs",
+    "test": "node --test"
+  },
+  "peerDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.0 || ^8.0.0",
+    "vue": "^3.5.30"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.0.0",
+    "vite7": "npm:vite@^7.3.7",
+    "vue": "^3.5.30"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vue",
+    "debugging",
+    "data-loc"
+  ]
+}
